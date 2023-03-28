@@ -14,10 +14,10 @@ device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cp
 
 #%%
 # Check the onnx model
-import onnx
+# import onnx
 
-onnx_model = onnx.load("vit_fruits_man-"+str(num_labels)+".onnx")
-onnx.checker.check_model(onnx_model)
+# onnx_model = onnx.load("vit_fruits_man-"+str(num_labels)+".onnx")
+# onnx.checker.check_model(onnx_model)
 
 #%%
 # Getting data
@@ -64,3 +64,4 @@ for i in range(4):
     plt.yticks([])
 plt.show()
 # %%
+plt.savefig("images/apple_prediction.png")

@@ -9,10 +9,7 @@ Build a new image from the Dockerfile:
 docker build -t jetson-onnxruntime-yolov4
 ```
 ### Example 1 - Object Detection
-1. Download the YOLOv4 model:
-```
-wget https://github.com/onnx/models/blob/main/vision/object_detection_segmentation/yolov4/model/yolov4.onnx
-```
+1. Download the YOLOv4 model [here](https://github.com/onnx/models/tree/main/vision/object_detection_segmentation/yolov4)
 
 2. Run the application:
 ```
