@@ -5,7 +5,7 @@ import postprocess_yolov4 as post
 from PIL import Image
 
 input_size = 416
-original_image = cv2.imread("images/original/kite.jpg")
+original_image = cv2.imread("../images/original/kite.jpg")
 original_image = cv2.cvtColor(original_image, cv2.COLOR_BGR2RGB)
 original_image_size = original_image.shape[:2]
 image_data = pre.image_preprocess(np.copy(original_image), [input_size, input_size])
@@ -15,7 +15,7 @@ print("Preprocessed image shape:",image_data.shape) # shape of the preprocessed 
 import onnxruntime as rt
 
 print("Inferring ...") 
-sess = rt.InferenceSession("yolov4.onnx", providers=['CUDAExecutionProvider'])
+sess = rt.InferenceSession("../onnx/yolov4.onnx", providers=['CUDAExecutionProvider'])
 			    
 output_name = sess.get_outputs()[0].name
 input_name = sess.get_inputs()[0].name
@@ -27,4 +27,4 @@ print("Output shape:", detections.shape)
 image = post.image_postprocess(original_image, input_size, detections)
  
 image = Image.fromarray(image)
-image.save("images/with-objects/kite-with-objects.jpg")
+image.save("../images/with-objects/kite-with-objects.jpg")
