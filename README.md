@@ -19,11 +19,8 @@ TWO options:
 2. Execute ``` ./RUN-DOCKER.sh ``` to start a container to run the scripts
 
 ### Example 1 - Object Detection
-1. Download the YOLOv4 model
-```bash
-cd yolov4/
-wget https://github.com/onnx/models/blob/main/vision/object_detection_segmentation/yolov4/model/yolov4.onnx
-```
+
+1. Download the YOLOv4 model [here](https://github.com/onnx/models/blob/main/vision/object_detection_segmentation/yolov4/model/yolov4.onnx), save to ./onnx/
 
 2. Run the application
 - Standalone:

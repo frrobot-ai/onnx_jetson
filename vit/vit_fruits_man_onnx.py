@@ -16,10 +16,10 @@ model_path = '../onnx/vit_fruits_man-'+str(num_labels)+'.onnx'
 dataset_path = '../data/fruits/fruits-360_dataset/fruits-360/Test'
 #%%
 # Check the onnx model
-import onnx
+# import onnx
 
-onnx_model = onnx.load(model_path)
-onnx.checker.check_model(onnx_model)
+# onnx_model = onnx.load(model_path)
+# onnx.checker.check_model(onnx_model)
 
 #%%
 # Getting data
@@ -65,3 +65,4 @@ for i in range(4):
     plt.yticks([])
 plt.show()
 # %%
+plt.savefig("images/apple_prediction.png")
