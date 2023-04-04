@@ -30,7 +30,7 @@ nvidia-docker run -it --rm -v $PWD:/workspace/ --workdir=/workspace/  jetson-onn
 ```
 - In the container:
 ```bash
-cd yolov4/
+cd ~/ros_ws/src/glozzom/yolov4/
 python3 yolov4.py
 ```
 
@@ -49,6 +49,6 @@ nvidia-docker run -it --rm -v $PWD:/workspace/ --workdir=/workspace/  jetson-onn
 ```
 - In the container:
 ```bash
-cd vit/
+cd ~/ros_ws/src/glozzom/vit/
 python3 vit_fruits_man_onnx.py
 ```
