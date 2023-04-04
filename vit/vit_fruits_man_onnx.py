@@ -18,8 +18,8 @@ dataset_path = '../data/fruits/fruits-360_dataset/fruits-360/Test'
 # Check the onnx model
 # import onnx
 
-onnx_model = onnx.load(model_path)
-onnx.checker.check_model(onnx_model)
+# onnx_model = onnx.load(model_path)
+# onnx.checker.check_model(onnx_model)
 
 #%%
 # Getting data
