@@ -63,6 +63,6 @@ for i in range(4):
     plt.title("Prediction: {}\nGroundtruth: {}".format(onnx_pred[i], example_targets[i]))
     plt.xticks([])
     plt.yticks([])
-plt.show()
+# plt.show()
 # %%
-plt.savefig("images/apple_prediction.png")
+plt.savefig("../images/apple_prediction.png")
